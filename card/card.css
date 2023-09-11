@@ -1,0 +1,116 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(45deg,rgb(255, 255, 0), rgb(255, 0, 195));
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background-color: rgba(255, 255, 255, 0.257);
+    border-radius: 30px;
+    transition: 0.5s;
+    
+}
+.card:hover{
+    height: 400px;
+    border-radius: 30px;
+}
+.imgBx{
+    position:absolute;
+    background-color:white;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    border-radius: 25px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.226);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.card:hover .imgBx{
+    width: 180px;
+    height: 180px;
+    top: -60px;
+}
+.imgBx img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(165px);
+}
+.card:hover .content .details{
+    transform: translateY(0);
+}
+.card .content .details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.25em;
+    color: #555;
+}
+.card .content .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.card .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card .content .data h3{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.card .content .data h3 span{
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+.card .content .details .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card .content .details .actionBtn button{
+    border: none;
+    outline: none;
+    background-color: #ff5f95;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius:9px ;
+    color: white;
+    cursor: pointer;
+}
+.card .content .details .actionBtn button:nth-child(2){
+    border-width: 1px;
+    border-style: solid;
+    border-color: #686868;
+    background-color: white;
+    color:  #686868;
+}
