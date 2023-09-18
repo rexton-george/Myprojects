@@ -35,7 +35,7 @@ for key, value in quiz.items():
     if answer.lower() == value[ 'answer'] . lower():
         print('Correct')
         score = score + 1
-        print("Your score is: " + str(score))
+        print("Your score is: ",score)
         print("")
         print("")
     else:
